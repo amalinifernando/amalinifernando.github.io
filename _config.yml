@@ -22,7 +22,7 @@ repository               : "amalinifernando/amalinifernando.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.svg"  # Replace with your photo, e.g. "profile.jpg" in /images/
+  avatar           : "profile.jpg"
   name             : "Amalini Fernando"
   description      : "Ph.D. Candidate in Political Science"
   pronouns         : ""
@@ -32,7 +32,7 @@ author:
   uri              : 
   email            : "amalinifernando@gmail.com" 
 
-  # Path to the public CV PDF (used by the sidebar button and the CV tab in _data/navigation.yml)
+  # Path to the public CV PDF (used by the Download CV button in the sidebar)
   cv_file          : "/files/Amalini_Fernando_CV.pdf"
 
   # Academic websites
