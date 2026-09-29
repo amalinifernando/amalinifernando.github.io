@@ -1,0 +1,89 @@
+# Conference presentations, newest first.
+# `year` is used for grouping; use "Upcoming" for accepted papers not yet presented.
+- year: Upcoming
+  title: "The California Effect revisited: state consumer privacy laws beyond California"
+  venue: New York State Political Science Association Conference
+  status: Accepted
+
+- year: Upcoming
+  title: "Who writes the law: model legislation and interest group influence in consumer data privacy policy"
+  venue: Northeastern Political Science Association Conference
+  status: Accepted
+
+- year: 2026
+  title: "Copy, paste, pass: how model legislation shapes consumer data privacy policy in the U.S."
+  venue: New England Political Science Association Conference
+  date: April 2026
+  location: Burlington, VT
+
+- year: 2026
+  title: "Disability discrimination in AI-enabled hiring: policy gaps & regulatory solutions"
+  venue: AI Plus Symposium
+  date: March 2026
+  location: Albany, NY
+
+- year: 2025
+  title: "A comparative study of data privacy regulations across the United States"
+  venue: Midwest Political Science Association Conference
+  date: March 2025
+  location: Chicago, IL
+
+- year: 2024
+  title: "A comparative study of data privacy regulations in California & New York"
+  venue: New York State Political Science Association Conference
+  date: April 2024
+  location: Albany, NY
+
+- year: 2023
+  title: "Moderating conspiracy theories on social media"
+  venue: University at Albany Student Research Showcase
+  date: April 2023
+  location: Albany, NY
+
+- year: 2023
+  title: "Goodbye buttons & bumper stickers, hello NFTs: NFTs as the newest political fundraising tool"
+  venue: Midwest Political Science Association Conference
+  date: April 2023
+  location: Chicago, IL
+
+- year: 2022
+  title: "Bretton Woods out, Beijing in: examining China's rising institutional power to change the rules-based liberal international order"
+  venue: Institutions and Societies Conference
+  date: February 2022
+  location: Albany, NY
+
+- year: 2019
+  title: "Promoting Sri Lankan cuisine to the world: lessons from Thailand"
+  venue: International Conference on Heritage as Soft Power
+  date: December 2019
+  location: Kelaniya, Sri Lanka
+
+- year: 2018
+  title: "Soft power of Korean popular culture in Sri Lanka"
+  venue: International Conference on Social Sciences
+  date: December 2018
+  location: Kelaniya, Sri Lanka
+
+- year: 2018
+  title: "Popular geopolitics in Cold War movies: a study of selected James Bond movies on their representation of the Cold War"
+  venue: International Studies Students' Research Symposium
+  date: December 2018
+  location: Kelaniya, Sri Lanka
+
+- year: 2018
+  title: "Postage stamps as political messengers: a study of political image building of the J. R. Jayawardana era"
+  venue: National Conference on Mass Communication
+  date: December 2018
+  location: Kelaniya, Sri Lanka
+
+- year: 2018
+  title: "Korean wave in Sri Lanka: past, present, future"
+  venue: Undergraduate Research Symposium
+  date: October 2018
+  location: Kelaniya, Sri Lanka
+
+- year: 2017
+  title: "Exporting power: opportunities and challenges for India in fulfilling Sri Lanka's energy demand"
+  venue: International Studies Students' Research Symposium
+  date: November 2017
+  location: Kelaniya, Sri Lanka

@@ -1,0 +1,45 @@
+roles:
+- role: Adjunct Lecturer
+  institution: Department of Political Science, University at Albany (SUNY)
+  date: June 2025 &ndash; Present
+  description: Design and teach undergraduate and master's courses, and provide individualized academic support and feedback to students in asynchronous online and in-person formats.
+  courses:
+  - code: RPOS 303
+    name: What the Government Does and Why It Does It
+    note: formerly Public Policy in Theory and Practice
+    terms: Summer 2025 &amp; 2026 (Asynchronous, Undergraduate); Fall 2026 (Synchronous, Undergraduate)
+  - code: RPOS 399
+    name: Information Policy in the US
+    terms: Fall 2025 (Synchronous, Undergraduate)
+  - code: RPOS 522
+    name: Politics and Policy
+    terms: Winter 2025 (Asynchronous, Master's)
+
+- role: Teaching Assistant
+  institution: Department of Political Science, University at Albany (SUNY)
+  date: August 2021 &ndash; August 2025
+  description: Assisted faculty with teaching responsibilities in undergraduate political science courses.
+  courses:
+  - code: RPOS 101
+    name: American Politics
+    terms: Spring and Fall 2023&ndash;2024
+  - code: RPOS 333
+    name: Women and the Law
+    terms: Spring and Fall 2022
+
+- role: Assistant Lecturer
+  institution: Department of International Studies, University of Kelaniya, Sri Lanka
+  date: July 2019 &ndash; July 2021
+  description: Designed and taught courses at the undergraduate and certificate levels; invigilated exams, assisted with departmental work, and oversaw non-academic student activities.
+  courses:
+  - name: Indian Ocean Politics
+    terms: Semester II, 2019 &amp; 2020
+  - name: Foreign Policy of Sri Lanka
+    terms: Semester II, 2019 &amp; 2020
+  - name: Foreign Policy of India
+    terms: Semester I, 2020
+
+development:
+- ACAS 601 &ndash; Seminar in College Level Teaching (Fall 2026)
+- Course Design Academy (2023)
+- Various courses and workshops related to college-level teaching
