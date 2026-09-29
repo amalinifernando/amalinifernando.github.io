@@ -1,3 +1,5 @@
+# Classes shown on the Teaching page.
+# A course with a `hub` gets a "Syllabus & course materials" button linking to its page in _teaching/.
 roles:
 - role: Adjunct Lecturer
   institution: Department of Political Science, University at Albany (SUNY)
@@ -8,13 +10,15 @@ roles:
     name: What the Government Does and Why It Does It
     note: formerly Public Policy in Theory and Practice
     terms: Summer 2025 &amp; 2026 (Asynchronous, Undergraduate); Fall 2026 (Synchronous, Undergraduate)
+    hub: "/teaching/rpos-303/"
   - code: RPOS 399
     name: Information Policy in the US
     terms: Fall 2025 (Synchronous, Undergraduate)
+    hub: "/teaching/rpos-399/"
   - code: RPOS 522
     name: Politics and Policy
     terms: Winter 2025 (Asynchronous, Master's)
-
+    hub: "/teaching/rpos-522/"
 - role: Teaching Assistant
   institution: Department of Political Science, University at Albany (SUNY)
   date: August 2021 &ndash; August 2025
@@ -26,7 +30,6 @@ roles:
   - code: RPOS 333
     name: Women and the Law
     terms: Spring and Fall 2022
-
 - role: Assistant Lecturer
   institution: Department of International Studies, University of Kelaniya, Sri Lanka
   date: July 2019 &ndash; July 2021
@@ -38,7 +41,6 @@ roles:
     terms: Semester II, 2019 &amp; 2020
   - name: Foreign Policy of India
     terms: Semester I, 2020
-
 development:
 - ACAS 601 &ndash; Seminar in College Level Teaching (Fall 2026)
 - Course Design Academy (2023)

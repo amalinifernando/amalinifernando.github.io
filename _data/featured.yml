@@ -1,0 +1,11 @@
+# Links shown in the "Featured" section of the homepage.
+# While this list is empty, the homepage shows a "Coming soon" placeholder.
+#
+# Add one entry per link, for example:
+#
+# - title: "Many Voices, One Call — Season 6, Episode 1"
+#   source: "SUNY Schenectady County Community College"
+#   date: "August 2026"
+#   url: "https://example.com/episode"
+#   icon: "fas fa-podcast"     # Font Awesome icon, e.g. fas fa-newspaper, fab fa-youtube, fab fa-linkedin
+[]

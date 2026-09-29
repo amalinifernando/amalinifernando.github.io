@@ -1,0 +1,26 @@
+---
+layout: single
+title: "WORK"
+permalink: /work/
+author_profile: false
+---
+
+{% include page-styles.html %}
+
+<h2 class="section-title">Work Experience</h2>
+<ul class="entry-list">
+  {% for item in site.data.work %}
+  <li class="entry">
+    <div class="entry-head">
+      <span class="entry-title">{{ item.role }}</span>
+      <span class="entry-date">{{ item.date }}</span>
+    </div>
+    <div class="entry-sub">{{ item.org }} &middot; {{ item.location }}</div>
+    <ul class="entry-points">
+      {% for point in item.points %}
+      <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>

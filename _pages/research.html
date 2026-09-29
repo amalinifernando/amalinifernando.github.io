@@ -1,0 +1,54 @@
+---
+layout: single
+title: "RESEARCH"
+permalink: /research/
+author_profile: false
+---
+
+{% include page-styles.html %}
+
+{% if site.author.googlescholar %}
+<div class="note-box">
+  <i class="fas fa-graduation-cap" style="color: var(--port-muted); margin-right: 8px;"></i>
+  You can also find my papers on <a href="https://scholar.google.com/citations?user={{ site.author.googlescholar }}" target="_blank" rel="noopener">my Google Scholar profile</a>.
+</div>
+{% endif %}
+
+<h2 class="section-title">Papers</h2>
+{% for group in site.data.papers %}
+<h3 style="font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.08em; color: var(--port-muted); margin: 25px 0 0;">{{ group.group }}</h3>
+<ul class="entry-list" style="margin-top: 5px;">
+  {% for item in group.items %}
+  <li class="entry">
+    <div class="entry-title">{{ item.title }}</div>
+    <div class="entry-sub">{{ item.citation }}</div>
+    <div class="entry-actions">
+      <span class="meta-btn tag">{{ item.type }}</span>
+      {% if item.url %}
+      <a class="meta-btn link" href="{{ item.url }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> {{ item.url_label | default: "Paper" }}</a>
+      {% elsif group.scholar_search == false %}
+      <span class="meta-btn muted">Link coming soon</span>
+      {% else %}
+      <a class="meta-btn link" href="https://scholar.google.com/scholar?q=%22{{ item.title | cgi_escape }}%22" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h2 class="section-title">Conference Presentations</h2>
+<ul class="entry-list">
+  {% for item in site.data.presentations %}
+  <li class="entry">
+    <div class="entry-head">
+      <span class="entry-title">{{ item.title }}</span>
+      <span class="entry-date">{% if item.date %}{{ item.date }}{% else %}{{ item.year }}{% endif %}</span>
+    </div>
+    <div class="entry-sub">
+      <i>{{ item.venue }}</i>{% if item.location %} &middot; {{ item.location }}{% endif %}
+      {% if item.status %}<span class="meta-btn tag" style="margin-left: 6px;">{{ item.status }}</span>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>

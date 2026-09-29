@@ -1,12 +1,13 @@
-pages:
-# NOTE: `name` field must match the `navbar_title` field in the page's front matter to ensure the correct page is highlighted in the navbar.
-- name: Home
-  url: /
-- name: Publications
-  url: /publications
-- name: Presentations
-  url: /presentations
-- name: Teaching
-  url: /teaching
-- name: Experience
-  url: /experience
+# Links in the header, in order. The site title (your name) on the left always links to the homepage.
+main:
+  - title: "Work"
+    url: /work/
+
+  - title: "Research"
+    url: /research/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "CV"
+    url: /cv/

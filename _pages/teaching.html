@@ -1,0 +1,40 @@
+---
+layout: single
+title: "TEACHING"
+permalink: /teaching/
+author_profile: false
+---
+
+{% include base_path %}
+{% include page-styles.html %}
+
+{% for role in site.data.teaching.roles %}
+<h2 class="section-title">{{ role.role }}</h2>
+<div class="entry-sub" style="margin-top: 10px;">
+  {{ role.institution }} &middot; {{ role.date }}
+</div>
+<ul class="entry-list" style="margin-top: 5px;">
+  {% for course in role.courses %}
+  <li class="entry">
+    <div class="entry-title">
+      {% if course.code %}{{ course.code }}: {% endif %}{{ course.name }}
+    </div>
+    <div class="entry-sub">
+      {% if course.note %}<i>{{ course.note | capitalize }}.</i> {% endif %}{{ course.terms }}
+    </div>
+    {% if course.hub %}
+    <div class="entry-actions">
+      <a class="meta-btn primary" href="{{ base_path }}{{ course.hub }}"><i class="fas fa-folder-open"></i> Syllabus &amp; course materials</a>
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h2 class="section-title">Teaching Development</h2>
+<ul class="entry-points" style="margin-top: 15px;">
+  {% for item in site.data.teaching.development %}
+  <li>{{ item }}</li>
+  {% endfor %}
+</ul>

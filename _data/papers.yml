@@ -1,0 +1,42 @@
+# Papers shown on the Research page, grouped by section.
+#
+# For each paper, `url` is the link to the paper itself. If `url` is left out,
+# academic papers link to a Google Scholar search for the title instead
+# (set `scholar_search: false` on a group to show "Link coming soon" instead).
+
+- group: Academic Publications
+  items:
+  - title: "From Korean Oppas to Bibimbap: The Socio-cultural Dynamics of the Korean Wave in Sri Lanka"
+    citation: "In R. Kumar & B. Das (eds.), <i>Korean Wave in South Asia: Transcultural Flow, Fandom & Identity</i>, pp. 187&ndash;208. Palgrave Macmillan, 2022."
+    type: Book Chapter
+    url: https://link.springer.com/book/10.1007/978-981-16-8710-5
+    url_label: Book
+
+  - title: "Promoting gastrodiplomacy to aid the recovery of Sri Lanka's tourism sector in the post-COVID-19 era: lessons from Thailand's gastrodiplomacy model"
+    citation: "<i>Samaja Vimarsana</i>, 4(1), 2021."
+    type: Journal Article
+
+  - title: "Brexit: the exit of the United Kingdom from the European Union"
+    citation: "In <i>Siwudesa</i>. Department of International Studies, University of Kelaniya, 2019. ISBN 978-955-704-015-8."
+    type: Book Chapter
+
+  - title: "Popular geopolitics and motion pictures: Cold War in James Bond movies"
+    citation: "<i>Journal of International Studies</i>, 5(1), 2019."
+    type: Journal Article
+    url: https://www.researchgate.net/publication/343736836_Popular_Geopolitics_and_Motion_Pictures_Cold_War_in_James_Bond_Movies
+
+- group: Op-Eds & Policy Briefs
+  scholar_search: false
+  items:
+  - title: "The end of one-time education: why you'll go back to college in midlife"
+    citation: "<i>Medium</i>, February 2026."
+    type: Op-Ed
+
+  - title: "The role of afterschool, summer, & other expanded learning programs in improving early literacy outcomes"
+    citation: "New York State Network for Youth Success (NYSNYS), October 2024."
+    type: Policy Brief
+
+  - title: "Can gastrodiplomacy revive tourism in Sri Lanka?"
+    citation: "Lakshman Kadirgamar Institute of International Relations & Strategic Studies (LKI), October 2019."
+    type: Policy Brief
+    url: https://lki.lk/publication/can-gastrodiplomacy-revive-tourism-in-sri-lanka/

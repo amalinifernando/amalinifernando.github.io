@@ -1,0 +1,52 @@
+{% include base_path %}
+{% include page-styles.html %}
+
+<style>
+  /* The course details are shown below, so hide the layout's generic subtitle and prev/next links */
+  .page__inner-wrap > header > p,
+  nav.pagination { display: none !important; }
+</style>
+
+<div class="entry-sub" style="margin-bottom: 25px;">
+  <a href="{{ base_path }}/teaching/" style="color: var(--link-color);"><i class="fas fa-arrow-left"></i> All classes</a>
+</div>
+
+<h2 class="section-title">About This Course</h2>
+<div class="content-text" style="margin-top: 15px;">
+  <strong>{{ page.course_code }}: {{ page.course_name }}</strong><br>
+  {{ page.venue }}<br>
+  <span style="color: var(--port-muted);">Taught: {{ page.terms }}</span>
+</div>
+{% if page.description %}
+<div class="content-text">{{ page.description }}</div>
+{% else %}
+<div class="note-box"><i class="fas fa-hourglass-half" style="margin-right: 8px;"></i>Course description coming soon.</div>
+{% endif %}
+
+<h2 class="section-title">Syllabus</h2>
+{% if page.syllabus %}
+<div class="entry-actions" style="margin-top: 15px;">
+  {% for s in page.syllabus %}
+  <a class="meta-btn primary" href="{{ base_path }}{{ s.file }}" target="_blank"><i class="fas fa-file-pdf"></i> {{ s.title }}</a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="note-box"><i class="fas fa-hourglass-half" style="margin-right: 8px;"></i>Syllabus coming soon.</div>
+{% endif %}
+
+<h2 class="section-title">Course Materials</h2>
+{% if page.materials %}
+<ul class="entry-list">
+  {% for m in page.materials %}
+  <li class="entry">
+    <div class="entry-head">
+      <a class="entry-title" href="{{ m.file | prepend: base_path }}" target="_blank">{{ m.title }}</a>
+      {% if m.type %}<span class="entry-date">{{ m.type }}</span>{% endif %}
+    </div>
+    {% if m.note %}<div class="entry-sub">{{ m.note }}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="note-box"><i class="fas fa-hourglass-half" style="margin-right: 8px;"></i>Lecture slides, readings and assignments coming soon.</div>
+{% endif %}

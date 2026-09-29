@@ -2,30 +2,36 @@
 
 Personal academic website of **Amalini Fernando**, Ph.D. candidate in Political Science at the University at Albany (SUNY).
 
-Built with Jekyll using the [academic-homepage](https://github.com/luost26/academic-homepage) template by Shitong Luo (MIT License).
+Built with Jekyll using the [Minimal Academic Site](https://github.com/minimalacademicsite/minimalacademicsite.github.io) template (MIT License), which is based on [Academic Pages](https://github.com/academicpages/academicpages.github.io).
 
 ## Where to edit content
 
 | What | File |
 | --- | --- |
-| Name, bio, contact links, education, experience summary, awards | `_data/profile.yml` |
-| Navigation bar | `_data/navigation.yml` |
-| Publications, op-eds and policy briefs (one file each) | `_publications/` |
-| News items on the homepage (one file each) | `_news/` |
+| Name, title, email, LinkedIn, Google Scholar, sidebar affiliations, CV path | `_config.yml` (the `author:` section) |
+| Header tabs (Work, Research, Teaching, CV) | `_data/navigation.yml` |
+| Biography and research interests (home page) | `_pages/about.md` |
+| "Featured" links on the home page | `_data/featured.yml` |
+| Work experience | `_data/work.yml` |
+| Papers and their links | `_data/papers.yml` |
 | Conference presentations | `_data/presentations.yml` |
-| Courses and teaching roles | `_data/teaching.yml` |
-| Work experience, service, media, editorial work, skills | `_data/cv.yml` |
+| Classes on the Teaching page | `_data/teaching.yml` |
+| Course materials hubs (one page per course) | `_teaching/rpos-303.html`, `rpos-399.html`, `rpos-522.html` |
+| CV PDF | `files/Amalini_Fernando_CV.pdf` |
+| Profile photo | `images/` (then set `avatar` in `_config.yml`) |
 
-To add a portrait, put a photo at `assets/images/photos/portrait.jpg` and uncomment `portrait_url` in `_data/profile.yml`.
-To link a CV, add a PDF under `assets/files/` and uncomment `cv_link`.
+### Adding course materials
+
+1. Put the files (PDFs, slides, etc.) in `files/teaching/<course>/`, e.g. `files/teaching/rpos-303/syllabus.pdf`.
+2. List them in the front matter of the course page in `_teaching/`, under `syllabus:` and `materials:` (there is a commented example in each file).
+
+Sections with nothing listed show a "coming soon" note.
 
 ## Local preview
 
 ```bash
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve -l -H localhost
 ```
 
-## Publishing
-
-In the repository's **Settings → Pages**, set the source to *Deploy from a branch* and choose the branch that contains this site (e.g. `main`, root folder). The site will be served at https://amalinifernando.github.io.
+Then open http://localhost:4000.
