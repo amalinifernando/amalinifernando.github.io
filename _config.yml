@@ -32,13 +32,8 @@ author:
   uri              : 
   email            : "amalinifernando@gmail.com" 
 
-  # Path to the public CV PDF (used by the sidebar button and the CV page)
+  # Path to the public CV PDF (used by the sidebar button and the CV tab in _data/navigation.yml)
   cv_file          : "/files/Amalini_Fernando_CV.pdf"
-
-  # Affiliations listed in the sidebar
-  affiliations:
-    - "Department of Political Science, University at Albany (SUNY)"
-    - "Rockefeller College of Public Affairs & Policy"
 
   # Academic websites
   academia         : 

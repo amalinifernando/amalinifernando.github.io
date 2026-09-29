@@ -175,17 +175,6 @@
     </div>
   </div>
 
-  {% if author.affiliations %}
-  <div style="margin-bottom: 35px; padding: 0 5px;">
-    <div class="sidebar-section-title">Affiliations</div>
-    <ul style="list-style: none; margin: 0; padding: 0; font-size: 0.8em; line-height: 1.5; text-align: left;">
-      {% for affiliation in author.affiliations %}
-      <li style="margin-bottom: 8px;"><i class="fas fa-university" style="color: #8fa0b3; margin-right: 6px;"></i>{{ affiliation }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
   {% if author.cv_file %}
   <div style="margin-top: 30px; text-align: center; border-top: 1px solid #eaeaea; padding-top: 20px;">
     <a href="{{ base_path }}{{ author.cv_file }}" target="_blank" class="cv-button">
