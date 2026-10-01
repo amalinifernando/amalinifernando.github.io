@@ -43,6 +43,7 @@ layout: compress
     /* 📱 মোবাইল এবং ট্যাবলেট লেআউট (Mobile & Tablet View) */
     @media (max-width: 1024px) {
       .main-container {
+        margin-top: 0 !important;
         flex-direction: column; /* সাইডবার এবং কন্টেন্ট উপর-নিচ হয়ে যাবে */
       }
       
@@ -50,7 +51,8 @@ layout: compress
         width: 100%; /* মোবাইলে সাইডবার পুরো স্ক্রিন জুড়ে থাকবে */
         border-right: none; /* ভার্টিক্যাল লাইনটি মুছে যাবে */
         border-bottom: 2px solid #eeeeee; /* সাইডবারের নিচে একটি লাইন আসবে */
-        padding: 20px 15px; /* মোবাইলের জন্য প্যাডিং কমানো হয়েছে */
+        padding: 20px 15px !important;
+        margin-top: 0 !important; /* মোবাইলের জন্য প্যাডিং কমানো হয়েছে */
         text-align: center; /* মোবাইলে সব আইকন ও ছবি মাঝখানে সুন্দর দেখাবে */
       }
 
