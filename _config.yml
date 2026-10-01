@@ -10,7 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default"
 title                    : "Amalini Fernando"
-title_separator          : "-"
+title_separator          : "–"
 name                     : &name "Amalini Fernando"
 description              : &description "Ph.D. Candidate in Political Science, University at Albany (SUNY)"
 url                      : "https://amalinifernando.github.io" 
