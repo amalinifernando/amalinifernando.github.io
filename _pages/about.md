@@ -60,7 +60,31 @@ redirect_from:
   .featured-card i { font-size: 1.3em; color: var(--port-muted); margin-top: 2px; width: 22px; text-align: center; }
   .featured-card .f-title { font-weight: 700; color: var(--port-primary); font-size: 0.92em; line-height: 1.4; }
   .featured-card .f-meta { font-size: 0.8em; color: var(--port-muted); margin-top: 3px; }
+  .featured-card .f-type { font-size: 0.68em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--port-muted); margin-bottom: 4px; }
   .featured-card.placeholder { border-left-style: dashed; border-left-color: var(--port-muted); opacity: 0.8; }
+  .featured-card.is-extra { display: none; }
+  .featured-grid.show-all .featured-card.is-extra { display: flex; }
+
+  .featured-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 7px 15px;
+    background: transparent;
+    border: 1px solid var(--port-primary);
+    border-radius: 4px;
+    color: var(--port-primary);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .featured-toggle:hover { background: var(--port-primary); color: #ffffff; }
+  .featured-toggle i { transition: transform 0.3s ease; }
+  .featured-toggle[aria-expanded="true"] i { transform: rotate(180deg); }
 </style>
 
 <div class="content-text">
@@ -85,18 +109,38 @@ redirect_from:
 </div>
 
 <h2 class="section-title">Featured</h2>
+{% assign featured_visible = 3 %}
 {% if site.data.featured and site.data.featured.size > 0 %}
-<div class="featured-grid">
-  {% for item in site.data.featured %}
-  <a class="featured-card" href="{{ item.url }}" target="_blank" rel="noopener">
+{% assign featured = site.data.featured | sort: "date" | reverse %}
+<div class="featured-grid" id="featured-grid">
+  {% for item in featured %}
+  <a class="featured-card{% if forloop.index > featured_visible %} is-extra{% endif %}" href="{{ item.url }}" target="_blank" rel="noopener">
     <i class="{{ item.icon | default: 'fas fa-link' }}"></i>
     <div>
+      {% if item.type %}<div class="f-type">{{ item.type }}</div>{% endif %}
       <div class="f-title">{{ item.title }}</div>
-      <div class="f-meta">{{ item.source }}{% if item.date %} &middot; {{ item.date }}{% endif %}</div>
+      <div class="f-meta">{{ item.source }}{% if item.date %} &middot; {{ item.date | date: "%B %Y" }}{% endif %}</div>
     </div>
   </a>
   {% endfor %}
 </div>
+{% if featured.size > featured_visible %}
+<button class="featured-toggle" type="button" aria-expanded="false" aria-controls="featured-grid"
+        data-more="Show all features ({{ featured.size }})" data-less="Show fewer">
+  <span>Show all features ({{ featured.size }})</span> <i class="fas fa-chevron-down"></i>
+</button>
+<script>
+  (function () {
+    var btn = document.querySelector('.featured-toggle');
+    var grid = document.getElementById('featured-grid');
+    btn.addEventListener('click', function () {
+      var open = grid.classList.toggle('show-all');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.querySelector('span').textContent = open ? btn.dataset.less : btn.dataset.more;
+    });
+  })();
+</script>
+{% endif %}
 {% else %}
 <div class="featured-grid">
   <div class="featured-card placeholder">

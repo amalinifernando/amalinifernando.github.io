@@ -1,11 +1,63 @@
 # Links shown in the "Featured" section of the homepage.
-# While this list is empty, the homepage shows a "Coming soon" placeholder.
 #
-# Add one entry per link, for example:
+# Entries are sorted by `date` automatically (newest first), so they can be added
+# in any order. Only the month and year are displayed; when two entries share a
+# month, the later day appears first.
 #
-# - title: "Many Voices, One Call — Season 6, Episode 1"
-#   source: "SUNY Schenectady County Community College"
-#   date: "August 2026"
-#   url: "https://example.com/episode"
-#   icon: "fas fa-podcast"     # Font Awesome icon, e.g. fas fa-newspaper, fab fa-youtube, fab fa-linkedin
-[]
+# Fields:
+#   title   – shown as the card heading (use Title Case)
+#   source  – the outlet or account that published it
+#   type    – Podcast, News Article, Social Media Post, Op-Ed, ...
+#   date    – YYYY-MM-DD
+#   url     – the link
+#   icon    – Font Awesome icon, e.g. fas fa-podcast, fas fa-newspaper,
+#             fab fa-linkedin, fab fa-x-twitter, fab fa-medium, fab fa-youtube
+
+- title: "Guest on Many Voices, One Call, Season 6, Ep. 1"
+  source: "SUNY Schenectady County Community College"
+  type: "Podcast"
+  date: 2026-09-01
+  url: "https://reachsunyschenectady.buzzsprout.com/1719037/episodes/19602733-many-voices-one-call-season-six-episode-one-politics-beyond-the-clickbait-what-power-do-we-actually-have"
+  icon: "fas fa-podcast"
+
+- title: "Congratulations, Fellows' Class of 2026!"
+  source: "Center for Women in Government & Civil Society"
+  type: "Social Media Post"
+  date: 2026-06-02
+  url: "https://www.linkedin.com/posts/center-for-women-in-government-and-civil-society_congratulations-fellows-class-of-2026-activity-7478091130929348609-R87T"
+  icon: "fab fa-linkedin"
+
+- title: "Recognition from NYS Senator Patricia Fahy"
+  source: "NYS Senator Patricia Fahy"
+  type: "Social Media Post"
+  date: 2026-06-01
+  url: "https://x.com/PatriciaFahy46/status/2071739856439353462"
+  icon: "fab fa-x-twitter"
+
+- title: "Rockefeller College Awards Ceremony & Reception"
+  source: "Rockefeller College"
+  type: "News Article"
+  date: 2026-05-01
+  url: "https://www.albany.edu/rockefeller/awards-ceremony"
+  icon: "fas fa-newspaper"
+
+- title: "Center for Women in Government and Civil Society Fellows Pave the Way for Social Change"
+  source: "Today at UAlbany"
+  type: "News Article"
+  date: 2026-04-01
+  url: "https://www.albany.edu/news-center/news/2026-center-women-government-and-civil-society-fellows-pave-way-social-change"
+  icon: "fas fa-newspaper"
+
+- title: "The End of One-Time Education: Why You'll Go Back to College in Midlife"
+  source: "Medium"
+  type: "Op-Ed"
+  date: 2026-02-01
+  url: "https://medium.com/@bernadenefernando/the-end-of-one-time-education-why-youll-go-back-to-college-in-midlife-1bc5a390a186"
+  icon: "fab fa-medium"
+
+- title: "UAlbany Celebrates More Than 50 Scholars at Annual Initiative for Women Awards Ceremony"
+  source: "Today at UAlbany"
+  type: "News Article"
+  date: 2025-08-01
+  url: "https://www.albany.edu/news-center/news/2025-ualbany-celebrates-more-50-scholars-annual-initiative-women-awards-ceremony"
+  icon: "fas fa-newspaper"
